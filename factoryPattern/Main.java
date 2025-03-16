@@ -11,5 +11,16 @@ public class Main
 		//Create a Truck Class Object
 		Vehicle truck = VehicleFactory.getVehicle("TRUCK");
 		truck.drive();
+		
+		
+		System.out.println("Using Generic Factory ");
+		
+		
+		//Using Generic Vehicle Factory..
+		Vehicle carV2 = GenericVehicleFactory.createVehicle(Car.class);
+	        carV2.drive(); 
+	        
+	        Vehicle truckV2 = GenericVehicleFactory.createVehicle(Truck.class);
+	        truckV2.drive();
 	}
 }
